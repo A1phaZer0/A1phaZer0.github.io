@@ -9,7 +9,7 @@
 title: 未来ガジェット研究所
 email: ini.universe@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Plus Ultra!!!
+  ONE FOR ALL
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://a1phazer0.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
@@ -18,3 +18,6 @@ hackerrank_username: inituniverse
 
 # Build settings
 markdown: kramdown
+
+# separator between excerpt and rest of a post
+excerpt_separator: <!--more-->

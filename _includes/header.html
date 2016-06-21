@@ -17,7 +17,7 @@
       <div class="trigger">
 	<a class="page-link" herf="/Posts.html"> /Posts </a>
 	<a class="page-link" herf="/Categoy.html"> /Category </a>
-	<a class="page-link" herf="./about/index.html"> /About </a>
+	<a class="page-link" herf="{% assign my_about = "/about" %}{{ my_about | prepend: site.baseurl }}"> {{ site.baseurl }} /About </a>
       </div>
     </nav>
 

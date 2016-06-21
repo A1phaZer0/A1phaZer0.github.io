@@ -15,9 +15,9 @@
       </a>
 
       <div class="trigger">
-	<a class="page-link" herf="/Posts.html"> /Posts </a>
-	<a class="page-link" herf="/Categoy.html"> /Category </a>
-	<a class="page-link" herf="{% assign my_about = "/about" %}{{ my_about | prepend: site.baseurl }}"> {{ site.baseurl }} /About </a>
+	<a class="page-link" href="{% assign my_posts = "/posts/" %}{{ my_posts | prepend: site.baseurl }}"> /Posts </a>
+	<a class="page-link" href="{% assign my_cg = "/categories/" %}{{ my_cg | prepend: site.baseurl }}"> /Categories </a>
+	<a class="page-link" href="{% assign my_about = "/about/" %}{{ my_about | prepend: site.baseurl }}"> /About </a>
       </div>
     </nav>
 

@@ -22,4 +22,5 @@ permalink: /posts/
 {{ paginator.total_pages }}
 {{ paginator.total_posts }}
 {{ paginator.previous_page_path }}
+{{ paginator.page }}
 </div> 

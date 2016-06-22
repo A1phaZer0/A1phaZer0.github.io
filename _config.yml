@@ -24,3 +24,12 @@ excerpt_separator: <!--more-->
 
 # categories
 categories-list: [Algorithm,Network,Unix,Misc]
+
+# pgaination
+paginate : 2
+paginate_path: /page:num
+
+
+# gems
+gems:
+  - jekyll-paginate

@@ -19,4 +19,7 @@ permalink: /posts/
 {% endfor %}
    </ul>
    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{{ paginator.total_pages }}
+{{ paginator.total_posts }}
+{{ paginator.previous_page_path }}
 </div> 

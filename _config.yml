@@ -21,3 +21,6 @@ markdown: kramdown
 
 # separator between excerpt and rest of a post
 excerpt_separator: <!--more-->
+
+# categories
+categories-list: [Algorithm,Network,Unix,Misc]

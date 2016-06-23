@@ -17,6 +17,7 @@ url: "https://a1phazer0.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username: A1phaZer0
 hackerrank_username: inituniverse
+deviantart_username: a1phazer0
 
 # Build settings
 markdown: kramdown
@@ -29,5 +30,5 @@ categories-list: [Algorithm,Network,Unix,Misc]
 
 # pgaination
 gems: [jekyll-paginate]
-paginate : 2
+paginate : 10
 paginate_path: /blog/page:num

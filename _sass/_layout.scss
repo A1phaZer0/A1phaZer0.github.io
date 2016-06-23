@@ -192,9 +192,8 @@
 }
 
 .post-link {
-    background-color: #e0ecee;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .post-heading {
@@ -258,3 +257,14 @@
 	margin-bottom: $spacing-unit;
 	margin-top: 50px;
 }
+
+/**
+ * Category
+ */
+
+.category-title {
+	font-size: 20px;
+	color: #cc8888;
+	line-height: 0px;
+}
+

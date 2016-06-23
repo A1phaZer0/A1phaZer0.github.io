@@ -11,7 +11,6 @@ permalink: /categories/
   	<h3>
   	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h3>
-	<br />
   {% endfor %}
 {% endfor %}
    </ul>

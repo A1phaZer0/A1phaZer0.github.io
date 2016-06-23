@@ -129,7 +129,7 @@ blockquote {
  */
 pre,
 code {
-    font-family: "DejaVu Sans Mono";
+    font-family: $mono-font-family;
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
@@ -146,7 +146,7 @@ pre {
     overflow-x: auto;
 
     > code {
-	font-family: "DejaVu Sans Mono";
+	font-family: $mono-font-family;
         border: 0;
         padding-right: 0;
         padding-left: 0;

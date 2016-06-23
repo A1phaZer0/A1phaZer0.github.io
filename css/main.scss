@@ -35,7 +35,8 @@
   font-style: oblique;
 }
 //$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-family: "DejaVu Sans";
+$base-font-family: "DejaVu Sans", sans-serif;
+$mono-font-family: "DejaVu Sans Mono", monospace;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;

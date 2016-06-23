@@ -30,4 +30,4 @@ categories-list: [Algorithm,Network,Unix,Misc]
 # pgaination
 gems: [jekyll-paginate]
 paginate : 2
-paginate_path: /page:num
+paginate_path: /blog/page:num

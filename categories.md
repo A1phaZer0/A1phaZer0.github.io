@@ -12,8 +12,8 @@ permalink: /categories/
 {% endif %}
 <br />
   {% for post in site.categories[category] %}
-  	<h3 class="category-link">
-  	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ post.title }}</a>
+  	<h3>
+  	<a class="post-link category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h3>
   {% endfor %}
 {% endfor %}

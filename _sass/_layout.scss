@@ -22,6 +22,9 @@
     &:visited {
         color: $grey-color-dark;
     }
+    &:hover {
+	color: $hover-color;
+    }
 }
 
 .site-nav {
@@ -40,6 +43,9 @@
         &:not(:last-child) {
             margin-right: 20px;
         }
+	&:hover {
+	    color: $hover-color;
+	}
     }
 
     @include media-query($on-palm) {

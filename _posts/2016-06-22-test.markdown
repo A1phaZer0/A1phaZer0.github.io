@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "YaHOOO"
+author: A1phaZer0
 date:   2016-06-15 13:24:49 +0800
 category: Unix
 ---

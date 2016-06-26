@@ -7,7 +7,7 @@ permalink: /categories/
 {% for category in site.categories-list %}
 {% if site.categories[category] != null %}
   <h3 class="category-title">
-    //{{ category }}
+    {{ category }}
   </h3>
 {% endif %}
 <br />

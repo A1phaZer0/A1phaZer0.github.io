@@ -1,6 +1,7 @@
 ---
 title:Notes-BasicBufferOverflowTechniques
 layout:post
+category:HackING
 ---
 #Basic buffer smash techniques on Linux
 

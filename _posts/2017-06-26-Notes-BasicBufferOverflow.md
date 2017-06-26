@@ -1,5 +1,5 @@
 ---
-title: Notes-BasicBufferOverflowTechniques
+title: "Notes-BasicBufferOverflowTechniques"
 layout: post
 author: A1phaZer0
 category: HackING

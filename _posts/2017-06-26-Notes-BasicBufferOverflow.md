@@ -1,12 +1,12 @@
 ---
-title:Notes-BasicBufferOverflowTechniques
-layout:post
-category:HackING
+title: Notes-BasicBufferOverflowTechniques
+layout: post
+author: A1phaZer0
+category: HackING
 ---
 #Basic buffer smash techniques on Linux
 
 #####C Calling convention on x86
----
 
 ```c
 void Func2(int a, int b)

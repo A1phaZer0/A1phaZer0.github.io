@@ -55,6 +55,6 @@ Typical memory layout of Linux on 32-bit x86 architecture.
 +=============+ 0x00000000
 ```
 >Name of program has influence on address of shellcode, one character increase in
-name makes 2 times bytes decrease in shellcode address.
+name makes 2 times bytes decrease in shellcode address.  
 >It's can't be checked by gdb, since gdb sets **_** environment variable to path
 of gdb, and puts this variable under shellcode.

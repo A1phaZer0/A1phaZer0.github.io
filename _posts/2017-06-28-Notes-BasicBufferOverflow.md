@@ -45,6 +45,7 @@ Typical memory layout of Linux on 32-bit x86 architecture.
 |             |                  |     .       |
 |             |                  |     .       |
 |             |                  |   argv[1]   |
+|             |                  |   argv[0]   |
 |             |                  |____argc_____|
 |             |                  |             |
 |             |                  |             |

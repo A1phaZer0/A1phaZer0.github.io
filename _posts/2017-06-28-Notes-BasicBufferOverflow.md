@@ -58,3 +58,29 @@ Typical memory layout of Linux on 32-bit x86 architecture.
 name makes 2 times bytes decrease in shellcode address.  
 >It's can't be checked by gdb, since gdb sets **_** environment variable to path
 of gdb, and puts this variable under shellcode.
+
+Use **execl()** or **execle()** to exploit target program.  
+
+**execl()** replaces current process with target program.
+
+```c
+
+int execl(const char *path, const char *name, const char *args, NULL);
+
+```
+
+**execle()** just like **execl()**, but it could be given a new environment.
+
+```c
+
+int execle(const char *path, const char *name, const char *args, NULL,  
+
+		           char *const envp[]);
+
+           
+
+char shellcode[] = "...";
+
+char *env = {shellcode, NULL}; //Must be NULL ended.
+
+```

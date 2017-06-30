@@ -57,7 +57,7 @@ Typical memory layout of Linux on 32-bit x86 architecture.
 ```
 >Name of program has influence on address of shellcode, one character increase in
 name makes 2 times bytes decrease in shellcode address.  
->It's can't be checked by gdb, since gdb sets **_** environment variable to path
+>It's can't be checked by gdb, since gdb sets <span style="color:red">**_**</span> environment variable to path
 of gdb, and puts this variable under shellcode.
 
 Use **execl()** or **execle()** to exploit target program.  

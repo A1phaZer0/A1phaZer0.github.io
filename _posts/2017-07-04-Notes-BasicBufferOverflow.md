@@ -63,6 +63,6 @@ But, what if no argument exists?   **OVERFLOW**
 |         |
 +=========+
 ```
-> If fmt_str1 is located near printf's calling stack, like `ebp + 24`, then printf will step through memorys then use `0xdeadbeef` as string address and print it.  
+> If fmt_str1 is located near printf's calling stack, like `ebp + 24`, then printf will step through memorys by `%x`s then use `0xdeadbeef` as string address and print it.  
 
 > The `%17x` in fmt_str2 means to control number of characters printed so far, so put 4 bytes junk data "AAAA" before next address to write is necessary.

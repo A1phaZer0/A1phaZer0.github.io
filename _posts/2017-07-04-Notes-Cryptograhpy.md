@@ -4,8 +4,9 @@ author: A1phaZer0
 layout: post
 category: HackING
 ---
-## 1. Password encryption
+## Password encryption
 On Linux, passwords are stored in the pattern: "salt+encryptedpassword", where salt is a two-character string.
+<!--more-->
 ```
                      +random salt(AA)
 password("abcdef") -------------------> AAMIOu3emYMks(encrypted password)

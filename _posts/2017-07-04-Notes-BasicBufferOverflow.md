@@ -102,7 +102,8 @@ Constructors and destructors are two special writable sections in ELF, `.ctors` 
 |          | <-- destructor function address, doesn't exist if there is none.
 |0xffffffff| <-- __DTOR_LIST__
 +==========+
-If *__DTOR_END__ is rewritten to a function address, that function will be executed after exit(0);
+If *__DTOR_END__ is rewritten to a function address, 
+that function will be executed after exit(0);
 ```
 
 #### PLT & GOT
@@ -114,4 +115,4 @@ jmp 0xccddeeff   --> for lazy-binding
 ```
 Changed target GOT slot will take control flow to any function.  
 
-**Notice: Before a instruction's execution, eip is pointing this instruction, when this instruction is being processed, eip is pointing to next instruction(not the one jmp or call set), after this instruction's execution, eip is set to target address.**
+**Notice: Before a instruction's execution, eip is pointing this instruction, when this instruction is being processed, eip is pointing to next instruction(not the one jmp or call set), after this instruction's execution, eip is set to the target address.**

@@ -79,6 +79,9 @@ category: HackING
 `art\ar name`: List register types\Show register values of type `name`.  
 `axF str.|obj.|map.|sym.|loc.|reloc.`: Find reference of flags.  
 `axf/axt`: Show references from\to here.  
+
+---
+
 **`c`: For Compare.**   
 `c string`: Compare stuff at current location with string.   
 `c4\c8 expr`: Compare 4\8 bytes with math expression `expr`.  
@@ -86,6 +89,9 @@ category: HackING
 `ccc`: Same as above, just show different lines.   
 `ccd`: Compare disassembled code.   
 `cx`: Compare hexpair string.   
+
+---
+
 **`d`: For Debug.**   
 `db`: List breakpoints.   
 `db main|addr`: Add a breakpoint at flag or addr.   
@@ -110,6 +116,9 @@ category: HackING
 `dx`: Inject opcode.   
 `dxa asm`: Inject assemble code.   
 `dxs`: Inject syscall.    
+
+---
+
 **`o`: For Open**   
 `o`: List opened files.   
 `o\o+ file`: Open file in read-only\read-write mode.   
@@ -118,6 +127,9 @@ category: HackING
 `om.`: Show current IO map.  
 `omf [mapid] rwx`: Change mapid's rwx flag.   
 `omfg[+-] rwx`: Change flags of all maps.   
+
+---
+
 **`p`: For Print**   
 `p6e\p6d len`: Use base64 to encode\decode `len` bytes.   
 `p8 len`: Show `len` bytes hexpair.   
@@ -141,6 +153,9 @@ category: HackING
 `pfo`: List available binary formats.   
 `pfo NAME`: Load target binary format.   
 `pf.elf_header [@ addr]`: Print as elf header.   
+
+---
+
 **`s`: For Seek**   
 `s\s:`: Print current address(with padded 0s).   
 `s-\s+`: Undo\redo seek.   
@@ -153,6 +168,9 @@ category: HackING
 **`S`: For Section**   
 `S`: List sections.   
 `S.`: Show current section name.   
+
+---
+
 **`w`: For Write**   
 `w[1248][+-] N`: Increase\decrease byte\half word\... by N.   
 `w string`: Write string.   
@@ -166,11 +184,17 @@ category: HackING
 `wo[asmd] val [@addr [!sz]]`: Write over current data by add\substract\multiply\divide `val`.   
 `wo[Aox] val [@addr [!sz]]`: Write over current data by add\or\xor `val`.   
 `wx 9090`: Write hexpair.   
+
+---
+
 **`y`: For Yank**   
 `y`: List yank buffer information.   
 `y N [@addr]`: Copy `N` bytes from `addr`.   
 `yp\yx\ys`: Print contents of clipboard\in hex\as string.   
 `yy`: Paste clipboard.   
+
+---
+
 **`V`: For Visual**   
 `c`: Toggle cursor.   
 `\`: Split mode.   

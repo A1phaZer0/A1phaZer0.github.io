@@ -48,7 +48,9 @@ category: HackING
 `iV`: Version info.   
 `iz\izz`: Strings in data section\whole file.   
 `q`: For quiet output, e.g. `isq`.   
+
 ---  
+
 **`a`: For Analyse.**   
 `ab`: Analyze the given bytes, output it's meaning.   
 `af/afr [name] [addr]`: Anaylze function, r means recursively.   

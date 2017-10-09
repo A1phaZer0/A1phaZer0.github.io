@@ -19,7 +19,7 @@ category: HackING
 ```bash
 [.][times][cmd][~grep][@[@iter]addr!size][|>pipe]
 ```  
-`.`: Used for interpret something as r2 commands.
+`.`: Used for interpret something as r2 commands.  
 `.r2cmd`: Interpret output of r2cmd as command.  
 `. filename`: Interpret r2 script file(`filename`).
 `times`: Repeat command specific times.

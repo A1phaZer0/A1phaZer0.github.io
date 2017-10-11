@@ -107,6 +107,10 @@ category: HackING
 `dm.`: Show current address memory map.   
 `do`: Reload.    
 `doo args`: Reload with args.   
+`dr`: Show gpr.  
+`drt`: Show all register types.  
+`drt 16\32\80`: Show registers 16\32\80 bits long.  
+`drr`: Telescoping.  
 `ds num`: Step one instruction or `num` instructions.   
 `dsf`: Step until end of frame.    
 `dso num`: Step over `num` instructions.   
@@ -142,6 +146,7 @@ category: HackING
 `pxf len`: Hexdump of current function.   
 `pxo len`: Octal dump.   
 `pxq len`: Quad-word dump.   
+`pxr`: Telescoping, `pxr @ esp`, `pxr @ rsp`.  
 `pxw len`: Word dump.    
 `pxx\pxX len`: `len` bytes\words ascii dump.   
 `pd N\pd -N`: Print N disassembled instructions forward\backward.   

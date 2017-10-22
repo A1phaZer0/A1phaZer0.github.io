@@ -40,18 +40,18 @@ narnia0@narnia:/narnia$
 ```
 NOW, HERE IS THE TRICK   
 ```c
-+-------------------+           +---------------+           +-------------------+
-|                   |  write()  |               |  read()   |                   |
-|  libc I/O buffer  |---------->|  pipe buffer  |---------->|  libc I/O buffer  |
-|                   |           |               |           |                   |
-+-------------------+           +---------------+           +-------------------+
-|             ^     |                                       |     |             |
-| printf()    |     |                                       |     |    scanf()  |
-| puts()      |     |                                       |     |    getline()|
-| fwrite()----+     |                                       |     +---->fread() |
-|                   |                                       |                   |
-|                   |                                       |                   |
-+-------------------+                                       +-------------------+
++-------------------+           +--------------+           +-------------------+
+|                   |  write()  |              |  read()   |                   |
+|  libc I/O buffer  |---------->| pipe buffer  |---------->|  libc I/O buffer  |
+|                   |           |              |           |                   |
++-------------------+           +--------------+           +-------------------+
+|             ^     |                                      |     |             |
+| printf()    |     |                                      |     |    scanf()  |
+| puts()      |     |                                      |     |    getline()|
+| fwrite()----+     |                                      |     +---->fread() |
+|                   |                                      |                   |
+|                   |                                      |                   |
++-------------------+                                      +-------------------+
 ```
 * stdin is always buffered.
 * stderr is always unbuffered.
@@ -70,7 +70,7 @@ narnia0@narnia:/narnia$ r2 narnia0
 [0x08048400]> s main
 ```
 2.Analyze `main` function and print disassembled code.
-```bash
+```c
 [0x080484fd]> afr main
 [0x080484fd]> pdf
 / (fcn) main 156

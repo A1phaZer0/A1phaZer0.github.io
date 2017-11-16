@@ -21,7 +21,7 @@ EB cb: jmp rel8
 ```
 `cb/rel8` is a signed value.
 #### Breakdown of shellcode
-**jmp-call-pop method** 
+**jmp-call-pop method**    
 GAS:  
 Add ` .intel_syntax noprefix` to use intel syntax and without `%` before registers.
 ```cpp

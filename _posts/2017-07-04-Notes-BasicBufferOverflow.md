@@ -84,8 +84,10 @@ These functions will print 4th of additional arguments of printf/snprintf.
 |         |        |         |<- 3rd
 |         |<- 4th  |         |<- 2nd
 |         |<- 3rd  |         |<- 1st
-|         |<- 2nd  | fmt_str |
-|         |<- 1st  |    n    |
+|         |<- 2nd  |         |
+|         |<- 1st  |         |
+|         |        | fmt_str |
+|         |        |    n    |
 | fmt_str |        |   str   |
 |   ret   |        |   ret   |
 |   ebp   |        |   ebp   |

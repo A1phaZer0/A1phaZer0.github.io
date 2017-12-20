@@ -74,8 +74,27 @@ But, what if no argument exists?   **OVERFLOW**
 #### Direct Parameter Access
 ```c
 printf("%4$x");
+snprintf(str, n, "%4$x");
 ```
-This function will print 4th argument of printf, the format string(pointer) itself is `0th`, but 0 can't be in a parameter.
+These functions will print 4th of additional arguments of printf/snprintf.
+```c
++=========+        +=========+
+|         |        |         |
+|         |        |         |<- 4th
+|         |        |         |<- 3rd
+|         |<- 4th  |         |<- 2nd
+|         |<- 3rd  |         |<- 1st
+|         |<- 2nd  |         |
+|         |<- 1st  |         |
+|         |        | fmt_str |
+|         |        |    n    |
+| fmt_str |        |   str   |
+|   ret   |        |   ret   |
+|   ebp   |        |   ebp   |
+|         |        |         |
++=========+        +=========+
+  printf            snprintf
+```
 ```c
 printf("%2$x %1$llx");
 // or

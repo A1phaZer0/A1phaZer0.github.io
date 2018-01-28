@@ -5,7 +5,7 @@ author: A1phaZer0
 category: HackING
 ---
 
-> ##### Function call
+> ### Function call
 
 In at&t syntax:
 ```cpp

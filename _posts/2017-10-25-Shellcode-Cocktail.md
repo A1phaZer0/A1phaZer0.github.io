@@ -5,15 +5,7 @@ author: A1phaZer0
 category: HackING
 ---
 
-> ### Function call
-
-> #### Function call
-
 > **Function call**
-
-**> Function call**
-
-** > Function call**
 
 In at&t syntax:
 ```cpp
@@ -24,7 +16,7 @@ call *(eax)
 // like above
 call *0xdeadbeef
 ```
-> #####Relative jump
+> **Relative jump**
 
 Relative jump will take control flow to somewhere from current `eip`. After instruction fetch stage, current `eip` will point to instruction next to `jmp`, so the real distance is calculated by `addr of des - addr of inst next to jmp`.  
 ```c
@@ -32,7 +24,7 @@ EB cb: jmp rel8
 ```
 `cb/rel8` is a signed value.
 
-> #####Breakdown of shellcode
+> **Breakdown of shellcode**
 
 **jmp-call-pop method**    
 GAS:  
@@ -83,14 +75,14 @@ LABELX:
 ```
 Why `'//bin/sh'`? Because it's 8 characters, one can use `push 0x68732f6e` and `push 0x69622f2f` to craft and no zero introduced.
 
-> #####Disassemble specific function by gdb
+> **Disassemble specific function by gdb**
 
 ```bash
 $ gdb -batch target_bin -ex 'disas main'
 # -ex to run command in gdb
 ```
 
-> #####Generate shellcode
+> **Generate shellcode**
 
 Compile with gcc
 ```bash
@@ -111,7 +103,7 @@ $ objdump -d target_bin -M intel | grep '^ ' | cut -f2
 $ for i in $( objdump -d bin - M intel | grep '^ ' | cut -f2 ); do echo -n '\x'$i; done; echo;
 ```
 
-> #####Test shellcode
+> **Test shellcode**
 
 ```cpp
 #include <stdio.h>

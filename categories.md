@@ -10,7 +10,6 @@ permalink: /categories/
     {{ category }}
   </h3>
 {% endif %}
-<br />
   {% for post in site.categories[category] %}
   	<h3>
   	<a class="post-link category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

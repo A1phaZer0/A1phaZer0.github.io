@@ -2,7 +2,7 @@
 title: "Notes-BasicBufferOverflowTechniques-0x1"
 layout: post
 author: A1phaZer0
-category: HackING
+category: Hacks
 ---
 
 OSes on various architectures have different layouts of memory.

@@ -2,7 +2,7 @@
 title: "Shellcode Cocktail"
 layout: post
 author: A1phaZer0
-category: HackING
+category: Hacks
 ---
 
 > **Function call**

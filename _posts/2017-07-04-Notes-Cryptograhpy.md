@@ -2,7 +2,7 @@
 title: "Notes-CryptographyOnLinux-0x0"
 author: A1phaZer0
 layout: post
-category: HackING
+category: Hacks
 ---
 ## Password encryption
 On Linux, passwords can be encrypted through various methods, like AES, MD5, DES, I'll take DES as an example. When password encrypted by DES algorithm, it'll be stored in the pattern: "salt+encryptedpassword", where salt is a two-character string.

@@ -1,7 +1,7 @@
 ---
 title: "Narnia1 Write-up"
 layout: post
-category: HackING
+category: Write-ups
 author: A1phaZer0
 ---
 1.Get disassembled code.  

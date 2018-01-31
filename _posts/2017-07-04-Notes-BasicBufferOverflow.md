@@ -2,7 +2,7 @@
 title: "Notes-BasicBufferOverflowTechniques-0x2"
 author: A1phaZer0
 layout: post
-category: HackING
+category: Hacks
 ---
 HEAP OVERFLOW, FORMAT STRING, PLT & GOT, etc.
 <!--more-->

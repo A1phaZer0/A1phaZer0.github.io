@@ -2,7 +2,7 @@
 title: "Notes Radare2Basics"
 layout: post
 author: A1phaZer0
-category: HackING
+category: Hacks
 ---
 
             +yhy  +hhyyyo          xo          xo

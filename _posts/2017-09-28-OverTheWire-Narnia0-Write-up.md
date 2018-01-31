@@ -1,7 +1,7 @@
 ---
 title: "Narnia0 Write-up"
 layout: post
-category: HackING
+category: Write-ups
 author: A1phaZer0
 ---
 3 ways to conquer narnia0, by peda, by radare2 and by pwntools.

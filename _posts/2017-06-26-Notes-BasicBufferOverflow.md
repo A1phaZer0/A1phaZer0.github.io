@@ -2,7 +2,7 @@
 title: "Notes-BasicBufferOverflowTechniques-0x0"
 layout: post
 author: A1phaZer0
-category: HackING
+category: Hacks
 ---
 
 ```c

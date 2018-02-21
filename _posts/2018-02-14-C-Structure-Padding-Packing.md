@@ -10,9 +10,10 @@ category: Hacks
 
 | arch | 8 bits       | 16 bits | 32 bits | 64 bits | 80 bits | 128 bits |
 |:----:|:------------:|:-------:|:-------:|:-------:|:-------:|:--------:|
-| x86  |no alignment|2-byte|4-byte|4-byte|4-byte|16-byte|
-|x86_64|no alignment|2-byte|4-byte|8-byte|16-byte|16-byte|
+| x86  |no alignment  |2-byte   |4-byte   |4-byte   |4-byte   |16-byte   |
+|x86_64|no alignment  |2-byte   |4-byte   |8-byte   |16-byte  |16-byte   |
 
+<!--more-->
 
 >**Padding**  
 

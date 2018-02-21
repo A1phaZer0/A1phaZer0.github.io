@@ -11,6 +11,7 @@ Carry flag and overflow flag are not that straight forward in integer arithmetic
 * Overflow flag otherwise is only relavant to signed integer arithmetic.  
 
 CF is set when carry out from or borrow into MSB(Most Significant Bit), otherwise CF will be cleared.  
+<!--more-->
 
 OF is set when MSB turns out to be something contradictary:  
 * two positive integers addition result to be negative.  

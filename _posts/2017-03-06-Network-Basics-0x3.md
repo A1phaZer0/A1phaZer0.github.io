@@ -32,6 +32,8 @@ MSB                               LSB
 +-----------------------------------+
 ```
 
+<!--more-->
+
 > **Subnet addressing**
 
 Subnet id comes from spliting original host id.

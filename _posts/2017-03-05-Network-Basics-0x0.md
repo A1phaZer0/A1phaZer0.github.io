@@ -21,6 +21,8 @@ category: Network
 
 **_socket_**: used for internal endpoint of a node.
 
+<!--more-->
+
 **_socket decriptor/socket address_**: Internally, process can reference a socket by socket descriptor (like a file descriptor). Externally, one computer can communicate to another via socket address, IP:PORT binding with a specific socket.
 
 **_gateway_**: used for translation between networks using different protocols.

@@ -40,6 +40,8 @@ There are exactly two end in TCP communication, so both broadcast and multicast 
 **_acknowledgement number_**: ending sequence number + 1.
 **_ISN_**: **I**nitial **S**equence **N**umber of sender when this connection established.
 
+<!--more-->
+
 When a TCP connection established, SYN = 1, this packet consumes one `sequence number`. Also, when a TCP connection finished, FIN = 1, and this packet consumes one `sequence number`.
 
 When a packet received successfully, receiver send back a packed with `ACK = 1` and `ackonwledgement number = sequence number of final byte of data + 1` to ask sender send a packet with new `sequence number = acknowledgement number`.

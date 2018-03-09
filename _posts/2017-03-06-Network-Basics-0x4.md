@@ -41,6 +41,8 @@ MSB                            LSB
 +-----------+-------------+
 ```
 
+<!--more-->
+
 No UDP header is needed except the first fragment.
 
 Through `tcpdump` we have:

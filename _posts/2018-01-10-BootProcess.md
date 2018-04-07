@@ -73,15 +73,15 @@ Port **0x1F7** on master-ATA gives us the Status Byte.
 
 Port **0x3F6** on master-ATA is the Device Control Register/Alternate Status. When this port is written to, it represents **Device Control Register**, when it's read from, it represents **Alternate Status** giving us the same byte as **0x1F7** without affecting interrupts.
 
-|Bit|Abbr.|Function
-|:---:|:---|:---
-|1|nIEN|Set this to stop the current device from sending interrupts.
-|2|SRST|Set this to do a "Software Reset" on all ATA drives on a bus, if one is misbehaving.
-|7|HOB|Set this to read back the High Order Byte of the last LBA48 value sent to an IO port. 
+|Bit|Abbr.|Function|
+|:---:|:---|:---|
+|1|nIEN|Set this to stop the current device from sending interrupts.|
+|2|SRST|Set this to do a "Software Reset" on all ATA drives on a bus, if one is misbehaving.|
+|7|HOB|Set this to read back the High Order Byte of the last LBA48 value sent to an IO port. |
 
 **Process of Data Transmission (28-bit LBA PIO on Primary Bus):**
 
-1. Send (0xE0 | ((LBA >> 24) & 0x0f)) to port 0x1F6.
+1. Send (0xE0 \| ((LBA >> 24) & 0x0f)) to port 0x1F6.
 2. Send sector count to port 0x1F2.
 3. Send (LBA & 0xff) to port 0x1F3.
 4. Send ((LBA >> 8) & 0xff) to port 0x1F4.

@@ -26,7 +26,7 @@ markdown: kramdown
 excerpt_separator: <!--more-->
 
 # categories
-categories-list: [Algorithm,Compiler,Hacks,Write-ups,Kernel,Network,Unix,Misc]
+categories-list: [Algorithm,Compiler,Write-ups,Hacks,Kernel,Network,Unix,Misc]
 
 # pgaination
 gems: [jekyll-paginate]
